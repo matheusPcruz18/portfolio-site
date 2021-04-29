@@ -10,16 +10,18 @@ import {
   NavLinks
 } from './style';
 
-const Navrbar = ({ toggle }) => {
+const Navrbar = ({ toggle, headerBg }) => {
   return (
-    <>
-      <Nav>
-        <NavbarContainer>
+    <NavbarContainer style={headerBg ? {background: '#000'} : {background: 'transparent'}}>
+        <div className="left">
           <NavbarLogoLink href="/">
             <NavbarLogoLink.Logo>
               Matheus Pereira
             </NavbarLogoLink.Logo>
           </NavbarLogoLink>
+        </div>
+
+        <div className="right">
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -34,9 +36,8 @@ const Navrbar = ({ toggle }) => {
               <NavLinks to="contact">Contato</NavLinks>
             </NavItem>
           </NavMenu>
-        </NavbarContainer>
-      </Nav>
-    </>
+        </div>
+    </NavbarContainer>
   );
 }
 
