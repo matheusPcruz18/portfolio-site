@@ -4,6 +4,7 @@ import Navrbar from "../components/Navbar";
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
+import MyProjects from '../components/MyProjects';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function Home() {
       <Navrbar toggle={toggle} headerBg={headerBg} />
       <Hero />
       <AboutMe />
+      <MyProjects />
     </>
   );
 }

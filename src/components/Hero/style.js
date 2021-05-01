@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Link from 'next/link';
+import { DiAndroid } from "react-icons/di";
 
 export const HeroContainer = styled.div`
   width: 100%;
@@ -61,7 +63,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 30px;
+    padding: 100px 18px;
   }
 
 `;
@@ -70,10 +72,6 @@ export const Greetings = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 export const GreetingsTop = styled.div`
@@ -87,8 +85,8 @@ export const HeroH1 = styled.h1`
   font-weight: normal;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
-    text-align: center;
+    font-size: 36px;
+    text-align: left;
   }
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -96,12 +94,12 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HighlightWord = styled.span`
-  font-size: 51px;
+  font-size: 50px;
   color: #975CD3;
   font-weight: bold;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 36px;
   }
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -109,23 +107,58 @@ export const HighlightWord = styled.span`
 `;
 
 export const HeroP = styled.p`
-  font-size: 21px;
+  font-size: 18px;
+  font-weight: bold;
   color: #fff;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
-    font-size: 18px;
-    text-align: center;
+    font-size: 12px;
+    text-align: left;
   }
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
+`;
+
+export const FindMeArea = styled.div`
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
   }
+
+  .github, .linkedin, .email{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    margin-top: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      margin-top: -50px;
+    }
+
+    :hover{
+      opacity: 0.6;
+    }
+  }
+`;
+
+FindMeArea.a = styled.a`
+  text-decoration: none;
 `;
 
 export const MySection = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 `;
 
@@ -137,6 +170,7 @@ export const Photo = styled.img`
   border: 2px solid #fff;
 
   @media screen and (max-width: 768px) {
+    align-self: flex-start;
     width: 150px;
     height: 150px;
   }
@@ -148,19 +182,36 @@ export const Photo = styled.img`
 `;
 
 export const Skills = styled.div`
-  width: 50%;
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0px 30px;
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 100%;
+    padding: 0px;
+    justify-content: flex-start;
   }
-
 `;
 
-Skills.icon = styled.img`
-  width: 50px;
-  height: 50px;
+Skills.Icon = styled.div`
+  width: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+
+Skills.Icon.Name = styled.span`
+  font-size: 14px;
+  color: #fff;
+  padding-top: 8px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;

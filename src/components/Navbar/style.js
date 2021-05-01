@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 
 export const NavbarContainer = styled.nav`
   width: 100%;
-  height: 60px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@ export const NavbarContainer = styled.nav`
   transition: 0.4s all ease;
 
   @media screen and (max-width: 960px){
-    transition: 0.8s all ease;
+    transition: 0.3s all ease;
     height: 60px;
     padding: 0 20px;
   }
@@ -33,6 +33,10 @@ NavbarLogoLink.Logo = styled.div`
   color: #fff;
   cursor: pointer;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -47,6 +51,7 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    bottom: 30px;
   }
 `;
 
@@ -75,8 +80,12 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
+  :hover{
+    color: #975CD3; 
+  }
+
   &:active{
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #975CD3;
 
   }
 `;
