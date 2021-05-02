@@ -72,6 +72,24 @@ export const Greetings = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  position: relative;
+  animation-name: 'greetings';
+  animation-duration: 2s;
+
+  @keyframes greetings{
+    0% {opacity:0.0; left: -150px;};
+    100% {opacity:1; left: 0px;};
+  }
+
+  @media screen and (max-width: 768px){
+    animation-duration: 3s;
+
+    @keyframes greetings{
+      0% {opacity:0.0; right: -30px;};
+      100% {opacity:1; right: 0px;};
+    }
+  }
 `;
 
 export const GreetingsTop = styled.div`
@@ -160,6 +178,24 @@ export const MySection = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  position: relative;
+  animation-name: mySectionAnimation;
+  animation-duration: 2s;
+
+  @keyframes mySectionAnimation{
+    0% {opacity:0.0; top: -250px;};
+    100% {opacity:1; top: 0px;}
+  }
+
+  @media screen and (max-width: 768px){
+    animation-duration: 3s;
+
+    @keyframes mySectionAnimation{
+      0% {opacity:0.0; bottom: 250px;};
+      100% {opacity:1; bottom: 0px;}
+    }
+  }
 `;
 
 export const Photo = styled.img`

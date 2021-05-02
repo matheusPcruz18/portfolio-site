@@ -13,7 +13,7 @@ const Navrbar = ({ toggle, headerBg }) => {
   return (
     <NavbarContainer style={headerBg ? {background: '#000'} : {background: 'transparent'}}>
         <div className="left">
-          <NavbarLogoLink href="/">
+          <NavbarLogoLink to="hero" smooth="true" duration={500} >
             <NavbarLogoLink.Logo>
               Matheus Pereira
             </NavbarLogoLink.Logo>
@@ -26,17 +26,35 @@ const Navrbar = ({ toggle, headerBg }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about" smooth="true" duration={500}>
+              <NavLinks 
+                activeClass="active" 
+                to="about" 
+                smooth="true" 
+                duration={500}
+                spy={true}
+              >
                 Sobre
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects" smooth="true" duration={500} >
+              <NavLinks 
+                activeClass="active" 
+                to="projects" 
+                smooth="true" 
+                duration={500}
+                className="projectClass"
+                spy={true}
+              >
                 Projetos
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact" smooth="true" duration={500}>
+            <NavLinks 
+                activeClass="active" 
+                to="contact" 
+                smooth="true" 
+                duration={500}  
+              >
                 Contato
               </NavLinks>
             </NavItem>
