@@ -15,14 +15,14 @@ function MyApp({ Component, pageProps }) {
 
         <meta name="description" content={description} />
         <meta property="og:title" content={title} key="ogtitle" />
-+       <meta property="og:description" content={description} key="ogdesc" />
++       <meta property="og:description" content={title} key="ogdesc" />
 
         {/* Open Graph */}
-        <meta property="og:url" content={previewImage} key="ogurl" />
-        <meta property="og:image" content={previewImage} key="ogimage" />
+        <meta property="og:url" content="https://matheus-pereira.vercel.app/" key="ogurl" />
+        <meta property="og:image" content="https://i.ibb.co/cyQVGW9/site-preview-image.png" key="ogimage" />
         <meta property="og:site_name" content={title} key="ogsitename" />
         <meta property="og:title" content={title} key="ogtitle" />
-<meta property="og:description" content={description} key="ogdesc" />
+        <meta property="og:locale" content="_ptBR"></meta>
 
       </Head>
       <Component {...pageProps} />
