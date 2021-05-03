@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
 import { FaAngleUp } from "react-icons/fa";
 
-const BackToTopBtn = (show) => {
+const BackToTopBtn = ({show}) => {
   return (
     <Container showicon={show} to="hero" smooth="true" duration={500} >
       <Icon />
