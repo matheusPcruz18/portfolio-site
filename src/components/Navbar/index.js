@@ -3,17 +3,19 @@ import { FaBars } from 'react-icons/fa';
 import { 
   NavbarContainer, 
   NavbarLogoLink,
+  CodeLogo,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks
 } from './style';
 
-const Navrbar = ({ toggle, headerBg }) => {
+const Navbar = ({ toggle, headerBg }) => {
   return (
     <NavbarContainer style={headerBg ? {background: '#000'} : {background: 'transparent'}}>
         <div className="left">
           <NavbarLogoLink to="hero" smooth="true" duration={500} >
+            <CodeLogo />
             <NavbarLogoLink.Logo>
               Matheus Pereira
             </NavbarLogoLink.Logo>
@@ -64,4 +66,4 @@ const Navrbar = ({ toggle, headerBg }) => {
   );
 }
 
-export default Navrbar;
+export default Navbar;

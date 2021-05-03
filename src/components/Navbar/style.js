@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Link from 'next/link';
 import { Link as LinkS } from 'react-scroll';
+import { FaCode } from 'react-icons/fa';
 
 export const NavbarContainer = styled.nav`
   width: 100%;
@@ -22,7 +22,8 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const NavbarLogoLink = styled(LinkS)`
-
+  display: flex;
+  align-items: center;
 `;
 
 NavbarLogoLink.Logo = styled.div`
@@ -37,6 +38,13 @@ NavbarLogoLink.Logo = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 1.1rem;
   }
+`;
+
+export const CodeLogo = styled(FaCode)`
+  width: 40px;
+  height: auto;
+  color: #fff;
+  margin-right: 10px;
 `;
 
 export const MobileIcon = styled.div`
@@ -60,7 +68,8 @@ export const NavMenu = styled.ul`
   margin-right: -22px;
 
   .active{
-    color: #975CD3; 
+    color: #975CD3;
+    font-weight: bold;
   }
 
   @media screen and (max-width: 768px) {
