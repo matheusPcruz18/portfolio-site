@@ -9,7 +9,7 @@ export const AboutMeContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   padding-top: 90px;
-  background-color: #fdfffc;
+  background-image: linear-gradient(to bottom, #fff, #fdfdfd, #dddd);
 `;
 
 export const Title = styled.h2`
@@ -24,10 +24,7 @@ export const AboutContent = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 768px) {
-    
-  }
+  margin-bottom: 30px;
 `;
 
 export const ContentRow = styled.div`

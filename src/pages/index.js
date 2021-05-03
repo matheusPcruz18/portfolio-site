@@ -7,6 +7,7 @@ import AboutMe from '../components/AboutMe';
 import MyProjects from '../components/MyProjects';
 import BackToTopBtn from '../components/BackToTopBtn';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,6 @@ export default function Home() {
 
   useEffect(() => {
     const backToTop = () => {
-      console.log(scrollY)
       if(scrollY > 500){
         setShowToTopBtn(true);
       }else{
@@ -59,6 +59,7 @@ export default function Home() {
       <AboutMe />
       <MyProjects />
       <Contact />
+      <Footer />
     </>
   );
 }

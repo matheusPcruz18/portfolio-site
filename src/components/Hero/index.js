@@ -14,8 +14,9 @@ import {
   Photo,
   Skills
 } from './style';
-import { DiJsBadge, DiReact, DiCss3, DiHtml5, DiGit } from "react-icons/di";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { DiJsBadge, DiReact, DiCss3, DiHtml5, DiGit, DiPhotoshop } from "react-icons/di";
+import { SiTypescript, SiAdobexd, SiFigma } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -63,28 +64,48 @@ const Hero = () => {
 
           <Skills>
             <Skills.Icon>
-              <DiJsBadge color="#f0db4f" style={{width: '50px', height: '50px'}} />
+              <DiJsBadge color="#f0db4f" className="icon" />
               <Skills.Icon.Name>JavaScript</Skills.Icon.Name>
             </Skills.Icon>
 
             <Skills.Icon>
-              <DiReact color="#61dafb" style={{width: '50px', height: '50px'}} />
+              <SiTypescript color="#2d79c7" className="icon" />
+              <Skills.Icon.Name>TypeScript</Skills.Icon.Name>
+            </Skills.Icon>
+
+            <Skills.Icon>
+              <DiReact color="#61dafb" className="icon" />
               <Skills.Icon.Name>React</Skills.Icon.Name>
             </Skills.Icon>
 
             <Skills.Icon>
-              <DiCss3 color="#2965f1" style={{width: '50px', height: '50px'}} />
+              <DiCss3 color="#2965f1" className="icon" />
               <Skills.Icon.Name>CSS</Skills.Icon.Name>
             </Skills.Icon>
 
             <Skills.Icon>
-              <DiHtml5 color="#f16529" style={{width: '50px', height: '50px'}} />
+              <DiHtml5 color="#f16529" className="icon" />
               <Skills.Icon.Name>HTML</Skills.Icon.Name>
             </Skills.Icon>
 
             <Skills.Icon>
-              <DiGit color="#f05033" style={{width: '50px', height: '50px'}} />
+              <DiGit color="#f05033" className="icon" />
               <Skills.Icon.Name>Git</Skills.Icon.Name>
+            </Skills.Icon>
+
+            <Skills.Icon>
+              <DiPhotoshop color="#fff" className="icon" />
+              <Skills.Icon.Name>Photoshop</Skills.Icon.Name>
+            </Skills.Icon>
+
+            <Skills.Icon>
+              <SiAdobexd color="#fff" className="icon" />
+              <Skills.Icon.Name>Adobe XD</Skills.Icon.Name>
+            </Skills.Icon>
+
+            <Skills.Icon>
+              <SiFigma color="#0acf83" className="icon" />
+              <Skills.Icon.Name>Figma</Skills.Icon.Name>
             </Skills.Icon>
             
           </Skills>

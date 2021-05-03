@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
 import { FaAngleUp } from "react-icons/fa";
 
-const BackToTopBtn = ({show}) => {
+const BackToTopBtn = (show) => {
   return (
-    <Container show={show} to="hero" smooth="true" duration={500} >
+    <Container showicon={show} to="hero" smooth="true" duration={500} >
       <Icon />
     </Container>
   )
@@ -14,8 +14,8 @@ const BackToTopBtn = ({show}) => {
 export default BackToTopBtn;
 
 const Container = styled(LinkS)`
-  width: ${props => props.show ? '30px' : '0px'};
-  height: ${props => props.show ? '30px' : '0px'};
+  width: ${props => props.showicon ? '30px' : '0px'};
+  height: ${props => props.showicon ? '30px' : '0px'};
   border-radius: 15px;
   background-color: #000;
   opacity: 0.6;

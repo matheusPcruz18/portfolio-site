@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { FaWhatsapp as Whats, FaMapMarkerAlt as Map } from "react-icons/fa";
+import { FaWhatsapp as Whats} from "react-icons/fa";
+import { BiMap as Map } from "react-icons/bi";
 import { AiOutlineMail as Email } from "react-icons/ai";
 
 const ContactCard = ({cardIcon, cardTitle, cardContent}) => {
-  const icon = cardIcon;
   return (
     <Card>
       <IconArea className="icon">
@@ -33,8 +33,12 @@ const Card = styled.div`
   transition: all ease 0.2s;
   transform: scale(0.9);
 
+  //box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+  
+
   @media screen and (max-width: 940px){
-    width: 80%;
+    width: 95%;
   }
 
   :hover{
@@ -50,7 +54,7 @@ const Card = styled.div`
 
 const IconArea = styled.div`
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
 `;
 
 const Title = styled.span`

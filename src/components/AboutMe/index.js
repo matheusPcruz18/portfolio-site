@@ -10,6 +10,9 @@ const AboutMe = () => {
     programmimg: '/programmimg.svg'
   }
 
+  const skills = aboutMeData.skills;
+
+
   return (
     <AboutMeContainer id={'about'}>
       <Title>Sobre Mim</Title>
@@ -18,7 +21,7 @@ const AboutMe = () => {
 
         <ContentRow>
           <div className="textArea left">
-            <Text>{aboutMeData.about}</Text>
+            <Text>{aboutMeData.about1}</Text>
           </div>
           <div className="imageArea right">
             <Image src={images.sittingDesk} />
@@ -30,13 +33,13 @@ const AboutMe = () => {
             <Image src={images.sittingCouch} />
           </div>
           <div className="textArea right">
-            <Text>{aboutMeData.about}</Text>
+            <Text>{aboutMeData.about2}</Text>
           </div>
         </ContentRow>
 
         <ContentRow>
           <div className="textArea left">
-            <Text>{aboutMeData.about}</Text>
+            <Text>{aboutMeData.about3 + skills + aboutMeData.about4}</Text>
           </div>
           <div className="imageArea right">
             <Image src={images.programmimg} />

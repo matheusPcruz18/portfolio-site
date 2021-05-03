@@ -5,6 +5,7 @@ export const ProjectsContainer = styled.div`
   height: 100%;
   background-image: linear-gradient(to bottom right, #011627, #3c096c);
   padding-top: 90px;
+  padding-bottom: 30px;
 `;
 
 export const Title = styled.h2`

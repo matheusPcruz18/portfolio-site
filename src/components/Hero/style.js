@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/link';
-import { DiAndroid } from "react-icons/di";
 
 export const HeroContainer = styled.div`
   width: 100%;
@@ -23,6 +21,10 @@ export const HeroContainer = styled.div`
     background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%),
       linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
     z-index: 2;
+  }
+
+  @media screen and (max-width: 768px){
+    padding: 0px 10px;
   }
   
 `;
@@ -59,7 +61,7 @@ export const HeroContent = styled.div`
   padding: 90px 150px;
   z-index: 3;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -218,16 +220,14 @@ export const Photo = styled.img`
 `;
 
 export const Skills = styled.div`
-  width: 100%;
   height: 60px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 0px 30px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding: 0px;
     justify-content: flex-start;
   }
 `;
@@ -239,6 +239,22 @@ Skills.Icon = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  @media screen and (max-width: 768px){
+      width: 40px;
+    }
+
+  .icon{
+    width: 50px;
+    height: 50px;
+
+    @media screen and (max-width: 768px){
+      width: 35px;
+      height: 35px;
+    }
+  }
 `;
 
 
@@ -248,6 +264,6 @@ Skills.Icon.Name = styled.span`
   padding-top: 8px;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 0px;
   }
 `;
