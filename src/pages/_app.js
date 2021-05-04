@@ -3,26 +3,28 @@ import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   const title = "Matheus Pereira - Portifólio"
-  const description = "Desenvolvedor web e mobile, formado em Informática para Internet e a procura da primeira oportunidade na área de desenvolvimento!";
-  const previewImage = "site-preview-image.jpg";
+  const description = "Desenvolvedor web e mobile, a procura da primeira oportunidade na área de desenvolvimento!";
 
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap" rel="stylesheet" />
 
-        <meta name="description" content={description} />
-        <meta property="og:title" content={title} key="ogtitle" />
-+       <meta property="og:description" content={title} key="ogdesc" />
+          <title>Matheus Pereira - Portifólio</title >
+          <meta name="title" content="Matheus Pereira - Portifólio" />
+          <meta name="description" content="Desenvolvedor web e mobile, a procura da primeira oportunidade na área de desenvolvimento!" />
 
-        {/* Open Graph */}
-        <meta property="og:url" content="https://matheus-pereira.vercel.app/" key="ogurl" />
-        <meta property="og:image" content="https://i.ibb.co/cyQVGW9/site-preview-image.png" key="ogimage" />
-        <meta property="og:site_name" content={title} key="ogsitename" />
-        <meta property="og:title" content={title} key="ogtitle" />
-        <meta property="og:locale" content="_ptBR"></meta>
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://matheus-pereira.vercel.app/" />
+          <meta property="og:title" content="Matheus Pereira - Portifólio" />
+          <meta property="og:description" content="Desenvolvedor web e mobile, a procura da primeira oportunidade na área de desenvolvimento!" />
+          <meta property="og:image" content="https://i.ibb.co/cyQVGW9/site-preview-image.png" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://matheus-pereira.vercel.app/" />
+          <meta property="twitter:title" content="Matheus Pereira - Portifólio" />
+          <meta property="twitter:description" content="Desenvolvedor web e mobile, a procura da primeira oportunidade na área de desenvolvimento!" />
+          <meta property="twitter:image" content="https://i.ibb.co/cyQVGW9/site-preview-image.png" />
+
 
       </Head>
       <Component {...pageProps} />
