@@ -1,6 +1,6 @@
-## Portifólio
+## Portfólio
 ---
-Site portifólio, one page, utilizando o Next com funcionalidaeds de SEO. 
+Site portfólio, one page, utilizando o Next com funcionalidades  de SEO. 
 
 ## 📷 Clique na imagem e confira
 
